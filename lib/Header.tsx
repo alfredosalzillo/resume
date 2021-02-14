@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link, Text, View, StyleSheet } from '@react-pdf/renderer';
+import Typography from './Typography';
 
 const styles = StyleSheet.create({
   container: {
@@ -18,11 +19,6 @@ const styles = StyleSheet.create({
     flexDirection: 'column',
     flexGrow: 2,
     alignSelf: 'flex-end',
-  },
-  name: {
-    fontSize: 24,
-    fontFamily: 'Lato',
-    fontWeight: 'bold',
   },
   subtitle: {
     fontSize: 10,
@@ -49,8 +45,8 @@ const Header: React.FC<HeaderProps> = ({
 }) => (
   <View style={styles.container}>
     <View style={styles.detailColumn}>
-      <Text style={styles.name}>{name}</Text>
-      <Text style={styles.subtitle}>{subtitle}</Text>
+      <Typography variant="h1">{name}</Typography>
+      <Typography variant="subtitle">{subtitle}</Typography>
     </View>
     <View style={styles.linkColumn}>
       <Link

@@ -1,16 +1,21 @@
 import React from 'react';
 import { Text, StyleSheet } from '@react-pdf/renderer';
+import Typography from './Typography';
 
 const styles = StyleSheet.create({
   title: {
-    fontFamily: 'Lato',
-    fontWeight: 'bold',
-    fontSize: 14,
     marginBottom: 10,
     textTransform: 'uppercase',
   },
 });
 
-const Title: React.FC = ({ children }) => <Text style={styles.title}>{children}</Text>;
+const Title: React.FC = ({ children }) => (
+  <Typography
+    variant="h2"
+    style={styles.title}
+  >
+    {children}
+  </Typography>
+);
 
 export default Title;
