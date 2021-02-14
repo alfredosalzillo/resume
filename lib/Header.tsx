@@ -21,7 +21,8 @@ const styles = StyleSheet.create({
   },
   name: {
     fontSize: 24,
-    fontFamily: 'Lato Bold',
+    fontFamily: 'Lato',
+    fontWeight: 'bold',
   },
   subtitle: {
     fontSize: 10,

@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactPDF, { Page, StyleSheet, Text, View } from '@react-pdf/renderer';
 import Header from './Header';
-import Education from './Education';
+import Educations from './Educations';
 import Experiences from './Experiences';
 import Skills from './Skills';
 import Contacts from './Contacts';
@@ -26,7 +26,8 @@ const styles = StyleSheet.create({
   },
   footer: {
     fontSize: 12,
-    fontFamily: 'Lato Bold',
+    fontFamily: 'Lato',
+    fontWeight: 'bold',
     textAlign: 'center',
     marginTop: 25,
     paddingTop: 10,
@@ -45,7 +46,7 @@ const Resume: React.FC<ReactPDF.PageProps> = (props) => (
     />
     <View style={styles.container}>
       <View style={styles.leftColumn}>
-        <Education />
+        <Educations />
         <Skills />
         <Contacts />
       </View>

@@ -7,7 +7,8 @@ const styles = StyleSheet.create({
     marginBottom: 10,
   },
   school: {
-    fontFamily: 'Lato Bold',
+    fontFamily: 'Lato',
+    fontWeight: 'bold',
     fontSize: 10,
   },
   degree: {
@@ -15,12 +16,13 @@ const styles = StyleSheet.create({
     fontSize: 10,
   },
   date: {
-    fontFamily: 'Lato Italic',
+    fontFamily: 'Lato',
+    fontStyle: 'italic',
     fontSize: 10,
   },
 });
 
-const Education: React.FC = () => (
+const Educations: React.FC = () => (
   <View style={styles.container}>
     <Title>Education</Title>
     <Text style={styles.school}>Federico II, University of Naples</Text>
@@ -29,4 +31,4 @@ const Education: React.FC = () => (
   </View>
 );
 
-export default Education;
+export default Educations;
