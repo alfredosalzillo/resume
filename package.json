@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "A developer resume written in React using @react-pdf.",
   "scripts": {
-    "build": "ts-node main.tsx"
+    "build": "npx ts-node main.tsx"
   },
   "author": "Alfredo Salzillo",
   "license": "ISC",
