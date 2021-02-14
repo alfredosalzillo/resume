@@ -191,7 +191,7 @@ const Resume: React.FC<ReactPDF.PageProps> = (props) => (
     </View>
     <Footer>
       <Typography variant="body" style={{ fontSize: 9, marginTop: 5 }}>
-        This resume is build with
+        This resume is built with
         {' '}
         <Link
           src="https://github.com/alfredosalzillo/resume"
