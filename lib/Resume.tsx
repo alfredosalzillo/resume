@@ -1,5 +1,5 @@
 import React from 'react';
-import ReactPDF, { Page, StyleSheet, View } from '@react-pdf/renderer';
+import ReactPDF, { Link, Page, StyleSheet, View } from '@react-pdf/renderer';
 import Header from './Header';
 import Education from './Education';
 import Experience  from './Experience';
@@ -8,6 +8,7 @@ import Contact from './Contact';
 import Project  from './Project';
 import Section from './Section';
 import Footer from './Footer';
+import Typography from './Typography';
 
 const experiences = [
   {
@@ -46,7 +47,7 @@ const experiences = [
 ];
 
 const styles = StyleSheet.create({
-  page: {
+  root: {
     padding: 30,
   },
   container: {
@@ -67,7 +68,7 @@ const styles = StyleSheet.create({
 });
 
 const Resume: React.FC<ReactPDF.PageProps> = (props) => (
-  <Page {...props} style={styles.page}>
+  <Page {...props} style={styles.root}>
     <Header
       name="Alfredo Salzillo"
       subtitle="Full Stack developer"
@@ -188,7 +189,19 @@ const Resume: React.FC<ReactPDF.PageProps> = (props) => (
         </Section>
       </View>
     </View>
-    <Footer>This IS the developer you are looking for</Footer>
+    <Footer>
+      <Typography variant="body" style={{ fontSize: 9, marginTop: 5 }}>
+        This resume is build with
+        {' '}
+        <Link
+          src="https://github.com/alfredosalzillo/resume"
+          style={{ color: 'black', textDecoration: 'none', fontWeight: 'bold' }}
+        >
+          https://github.com/alfredosalzillo/resume
+        </Link>
+        .
+      </Typography>
+    </Footer>
   </Page>
 );
 

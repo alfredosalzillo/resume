@@ -1,22 +1,15 @@
-import { StyleSheet, Text } from '@react-pdf/renderer';
+import { StyleSheet, View } from '@react-pdf/renderer';
 import React from 'react';
 
 const styles = StyleSheet.create({
   root: {
-    fontSize: 12,
-    fontFamily: 'Lato',
-    fontWeight: 'bold',
-    textAlign: 'center',
-    marginTop: 25,
-    paddingTop: 10,
-    borderWidth: 3,
-    borderColor: 'gray',
-    borderStyle: 'dashed',
+    borderTop: '1 solid black',
+    paddingTop: 5,
   },
 });
 
 const Footer: React.FC = ({ children }) => (
-  <Text style={styles.root}>{children}</Text>
+  <View style={styles.root}>{children}</View>
 )
 
 export default Footer;
