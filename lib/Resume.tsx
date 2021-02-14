@@ -1,5 +1,5 @@
 import React from 'react';
-import ReactPDF, { Page, StyleSheet, Text, View } from '@react-pdf/renderer';
+import ReactPDF, { Page, StyleSheet, View } from '@react-pdf/renderer';
 import Header from './Header';
 import Education from './Education';
 import Experience  from './Experience';
