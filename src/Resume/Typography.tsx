@@ -1,18 +1,8 @@
 import React from 'react';
 import ReactPDF, { StyleSheet, Text } from '@react-pdf/renderer'
+import { makeStyles } from './styles';
 
-const mergeStyles = (...styles: Array<ReactPDF.Style | ReactPDF.Style[]>) => styles
-  .reduce((acc: ReactPDF.Style[], style) => {
-    if (Array.isArray(style)) {
-      return [...acc, ...style];
-    }
-    if (!style) {
-      return acc;
-    }
-    return [...acc, style];
-  }, [] as ReactPDF.Style[]);
-
-const styles = StyleSheet.create({
+const useStyles = makeStyles((theme) => ({
   h1: {
     fontSize: 24,
     fontFamily: 'Lato',
@@ -40,24 +30,34 @@ const styles = StyleSheet.create({
     fontFamily: 'Lato',
     fontSize: 10,
     fontStyle: 'italic',
-  }
-});
+  },
+  primary: {
+    color: theme.palette.primary.main,
+  },
+  inherit: {},
+}))
 
 export type TypographyVariant = 'h1' | 'h2' | 'h3' | 'subtitle' | 'body' | 'emphasis';
+export type TypographyColor = 'primary' | 'inherit';
 export type TypographyProps = {
   variant?: TypographyVariant,
+  color?: TypographyColor,
   italic?: boolean,
 } & ReactPDF.TextProps;
 
 const Typography: React.FC<TypographyProps> = ({
   variant = 'body',
-  style,
+  color = 'inherit',
+  style= {},
   ...props
-}) => (
-  <Text
-    {...props}
-    style={mergeStyles(styles[variant], style)}
-  />
-)
+}) => {
+  const styles = useStyles();
+  return (
+    <Text
+      {...props}
+      style={StyleSheet.flatten({ ...styles[color], ...styles[variant] }, style)}
+    />
+  );
+}
 
 export default Typography;

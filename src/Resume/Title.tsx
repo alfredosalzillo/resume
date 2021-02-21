@@ -1,5 +1,5 @@
 import React from 'react';
-import { Text, StyleSheet } from '@react-pdf/renderer';
+import { StyleSheet } from '@react-pdf/renderer';
 import Typography from './Typography';
 
 const styles = StyleSheet.create({
@@ -12,6 +12,7 @@ const styles = StyleSheet.create({
 const Title: React.FC = ({ children }) => (
   <Typography
     variant="h2"
+    color="primary"
     style={styles.title}
   >
     {children}

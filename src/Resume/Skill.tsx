@@ -59,7 +59,8 @@ export const SkillEntry: React.FC<SkillEntryProps> = ({ name, skills }) => (
 );
 
 
-export default {
+const Skill = {
   Entry: SkillEntry,
   Cloud: SkillCloud,
-};
+}
+export default Skill;

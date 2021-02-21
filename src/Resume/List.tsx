@@ -1,5 +1,5 @@
 import React from 'react';
-import { Text, View, StyleSheet } from '@react-pdf/renderer';
+import { View, StyleSheet } from '@react-pdf/renderer';
 import Typography from './Typography';
 
 const styles = StyleSheet.create({
@@ -26,7 +26,7 @@ const List: React.FC = ({ children }) => (
 
 export const Item: React.FC = ({ children }) => (
   <View style={styles.item}>
-    <Typography variant="body" style={styles.bulletPoint}>•</Typography>
+    <Typography variant="body" style={styles.bulletPoint}>• </Typography>
     <Typography variant="body" style={styles.itemContent}>{children}</Typography>
   </View>
 );
