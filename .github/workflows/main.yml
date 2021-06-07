@@ -11,6 +11,8 @@ jobs:
       - uses: actions/setup-node@v2
       - uses: actions/checkout@v2
       - name: build
+        env: 
+          PUBLIC_URL: /resume
         run: |
           npm install
           npm run render-to-file
