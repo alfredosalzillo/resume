@@ -3,7 +3,7 @@ import React from 'react';
 import './App.css';
 import Resume, { registerFonts } from './Resume';
 
-registerFonts()
+registerFonts(process.env.PUBLIC_URL)
 
 const App = ()  => (
   <div className="App">
