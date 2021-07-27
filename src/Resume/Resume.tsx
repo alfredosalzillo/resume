@@ -210,6 +210,7 @@ const Resume: React.FC<ReactPDF.PageProps> = (props) => {
                 { name: 'Google Cloud', weight: 7 },
                 { name: 'Serverless', weight: 7 },
                 { name: 'Firebase', weight: 7 },
+                { name: 'Googling', weight: 10 },
               ]}
             />
             <SkillEntry
