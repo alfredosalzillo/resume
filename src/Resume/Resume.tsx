@@ -154,7 +154,7 @@ const Resume: React.FC<ReactPDF.PageProps> = (props) => {
             <Contact
               label="email"
               value="alfredosalzillo93@gmail.com"
-              link="mailto:alfredosalzillo@gmail.com"
+              link="mailto:alfredosalzillo93@gmail.com"
             />
             <Contact
               label="mobile phone"
