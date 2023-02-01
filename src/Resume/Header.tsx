@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link, View } from '@react-pdf/renderer';
+import { Link, Text, View } from '@react-pdf/renderer';
 import Typography from './Typography';
 import { makeStyles } from './styles';
 
@@ -56,7 +56,9 @@ const Header: React.FC<HeaderProps> = ({
           style={styles.link}
           src={link}
         >
-          {link}
+          <Text>
+            {link}
+          </Text>
         </Link>
       </View>
     </View>

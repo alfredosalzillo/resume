@@ -1,5 +1,5 @@
 import React from 'react';
-import ReactPDF, { Font, Link, Page, View } from '@react-pdf/renderer';
+import ReactPDF, { Font, Link, Page, View, Text } from '@react-pdf/renderer';
 import Header from './Header';
 import Education from './Education';
 import Experience  from './Experience';
@@ -154,7 +154,7 @@ const Resume: React.FC<ReactPDF.PageProps> = (props) => {
     <Page {...props} style={styles.root}>
       <Header
         title="Alfredo Salzillo"
-        subtitle="Full Stack developer"
+        subtitle="Senior frontend developer"
         link="https://github.com/alfredosalzillo"
       />
       <View style={styles.container}>
@@ -278,7 +278,9 @@ const Resume: React.FC<ReactPDF.PageProps> = (props) => {
             src="https://github.com/alfredosalzillo/resume"
             style={styles.link}
           >
-            https://github.com/alfredosalzillo/resume
+            <Text>
+              https://github.com/alfredosalzillo/resume
+            </Text>
           </Link>
           .
         </Typography>

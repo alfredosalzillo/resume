@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, StyleSheet, Text, Link } from '@react-pdf/renderer';
+import { View, Text, Link } from '@react-pdf/renderer';
 import { makeStyles } from './styles';
 
 
@@ -26,10 +26,11 @@ type ContactProps = {
 }
 const Contact: React.FC<ContactProps> = ({ label, value, link }) => {
   const styles = useStyles();
+  console.log(styles, value)
   return (
     <View style={styles.container}>
       <Text style={styles.type}>{label}</Text>
-      <Link src={link!} style={styles.contact}>{value}</Link>
+      <Link src={link!} style={styles.contact}><Text>{value}</Text></Link>
     </View>
   );
 };
