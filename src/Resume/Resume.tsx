@@ -76,8 +76,20 @@ export const registerFonts = (baseUrl: string = '.') => {
 
 const experiences = [
   {
+    company: 'Treedom',
+    date: 'November 2021 - Today',
+    details: [
+      'Progressibely migrated the angularjs/vue app to React SSR using Next.',
+      'Improved i18n management using lokalize.',
+      'Improved the main website performances score from F to a A.',
+      'Decreased the main website co2 consumption from an average of 2g for page to 0.50g for page.',
+      'Decreased the main website loading time from an average of 10seconds to less than 3seconds.',
+    ],
+    position: 'Senior front-end developer',
+  },
+  {
     company: 'Together Price',
-    date: 'September 2019 - Today',
+    date: 'September 2019 - October 2021',
     details: [
       'Migrated the React progressive web app to typescript.',
       'Implemented continues delivery using jenkins.',
