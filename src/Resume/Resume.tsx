@@ -113,10 +113,7 @@ const experiences = [
     details: [
       'Developed a customized reporting solution for the identification of a critical issues in banking processes,' +
       ' optimized for client side processing, using Angular 5 and Devextreme UI library.',
-      'Developed Restful HEATOS services for the implementation of a survey platform, developer using Spring 5.',
       'Developed a web application for a survey platform using React.',
-      'Managed installation of DWH infrastructures such Oracle DB, SAS, JBoss.',
-      'Managed a team for the maintenance and evolution reporting solution for a Telco using SAS technologies',
     ],
     position: 'Full stack and DWH developer',
   },
@@ -205,6 +202,7 @@ const Resume: React.FC<ReactPDF.PageProps> = (props) => {
               name="Framework and Technologies"
               skills={[
                 { name: 'React', weight: 10 },
+                { name: 'Next', weight: 7 },
                 { name: 'Spring', weight: 6 },
                 { name: 'Hibernate', weight: 6 },
                 { name: 'Git', weight: 7 },
@@ -263,14 +261,10 @@ const Resume: React.FC<ReactPDF.PageProps> = (props) => {
               }
             />
             <Project
-              title="Menulime"
-              link="https://menulime.com/"
+              title="blobs-dead-or-alive"
+              link="https://dev.to/alfredosalzillo/a-game-of-blobs-dead-or-alive-2alj"
               description={
-                'Developed a digital menu progressive web app.' +
-                '\nThe app provide a customizable digital menu for restaurant, bar, barber shop, etc...' +
-                '\nThe PWA also be used to receive and manage orders, generate QRCodes and print the menu.' +
-                '\nThe PWA is developer using React, material-ui with a NodeJS backend using Restful NestJS and it\'s deployed' +
-                ' on google cloud.'
+                'A game of blobs...'
               }
             />
           </Section>

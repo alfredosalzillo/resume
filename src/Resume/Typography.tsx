@@ -1,5 +1,5 @@
 import React from 'react';
-import ReactPDF, { StyleSheet, Text } from '@react-pdf/renderer'
+import ReactPDF, { Text } from '@react-pdf/renderer'
 import { makeStyles } from './styles';
 
 const useStyles = makeStyles((theme) => ({
@@ -55,7 +55,7 @@ const Typography: React.FC<TypographyProps> = ({
   return (
     <Text
       {...props}
-      style={StyleSheet.flatten({ ...styles[color], ...styles[variant] }, style)}
+      style={[{ ...styles[color], ...styles[variant] }, style].flat()}
     />
   );
 }
