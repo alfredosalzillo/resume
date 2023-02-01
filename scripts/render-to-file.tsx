@@ -4,7 +4,7 @@ import Resume, { registerFonts } from '../src/Resume';
 
 registerFonts('./public');
 
-ReactPDF.render(
+ReactPDF.renderToFile(
   <Document
     author="Alfredo Salzillo"
     keywords="awesome, resume, developer, react"
@@ -14,4 +14,4 @@ ReactPDF.render(
     <Resume />
   </Document>,
   `./resume.pdf`,
-);
+).then(() => console.log('resume created successfully'))

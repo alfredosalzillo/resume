@@ -26,7 +26,6 @@ type ContactProps = {
 }
 const Contact: React.FC<ContactProps> = ({ label, value, link }) => {
   const styles = useStyles();
-  console.log(styles, value)
   return (
     <View style={styles.container}>
       <Text style={styles.type}>{label}</Text>
