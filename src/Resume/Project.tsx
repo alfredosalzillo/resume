@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link, StyleSheet, View } from '@react-pdf/renderer';
+import { Link, View } from '@react-pdf/renderer';
 import Typography from './Typography';
 import { makeStyles } from './styles';
 
