@@ -49,5 +49,5 @@
     "@react-pdf/renderer": {
       "react": "^17.0.1"
     }
-  },
+  }
 }
