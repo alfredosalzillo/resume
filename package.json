@@ -10,8 +10,8 @@
   },
   "scripts": {
     "start": "craco start",
-    "build": "craco build",
-    "render-to-file": "npx ts-node  ./scripts/render-to-file.tsx",
+    "build:web": "craco build",
+    "build:pdf": "npx ts-node  ./scripts/render-to-file.tsx",
     "test": "craco test"
   },
   "eslintConfig": {
