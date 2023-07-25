@@ -9,7 +9,7 @@ const styles = StyleSheet.create({
   },
 });
 
-const Title: React.FC = ({ children }) => (
+const Title: React.FC<React.PropsWithChildren> = ({ children }) => (
   <Typography
     variant="h2"
     color="primary"

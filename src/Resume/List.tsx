@@ -18,13 +18,13 @@ const styles = StyleSheet.create({
   },
 });
 
-const List: React.FC = ({ children }) => (
+const List: React.FC<React.PropsWithChildren> = ({ children }) => (
   <View style={styles.root}>
     {children}
   </View>
 );
 
-export const Item: React.FC = ({ children }) => (
+export const Item: React.FC<React.PropsWithChildren> = ({ children }) => (
   <View style={styles.item}>
     <Typography variant="body" style={styles.bulletPoint}>• </Typography>
     <Typography variant="body" style={styles.itemContent}>{children}</Typography>

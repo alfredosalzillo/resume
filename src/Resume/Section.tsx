@@ -8,9 +8,9 @@ const styles = StyleSheet.create({
   },
 });
 
-type SectionProps = {
+type SectionProps = React.PropsWithChildren<{
   title: React.ReactNode,
-}
+}>
 const Section: React.FC<SectionProps> = ({
    children,
    title,

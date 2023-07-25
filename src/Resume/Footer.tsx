@@ -9,7 +9,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }))
 
-const Footer: React.FC = ({ children }) => {
+const Footer: React.FC<React.PropsWithChildren> = ({ children }) => {
   const styles = useStyles();
   return (
     <View style={styles.root}>{children}</View>

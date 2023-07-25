@@ -39,11 +39,11 @@ const useStyles = makeStyles((theme) => ({
 
 export type TypographyVariant = 'h1' | 'h2' | 'h3' | 'subtitle' | 'body' | 'emphasis';
 export type TypographyColor = 'primary' | 'inherit';
-export type TypographyProps = {
+export type TypographyProps = React.PropsWithChildren<{
   variant?: TypographyVariant,
   color?: TypographyColor,
   italic?: boolean,
-} & ReactPDF.TextProps;
+} & ReactPDF.TextProps>;
 
 const Typography: React.FC<TypographyProps> = ({
   variant = 'body',
