@@ -15,8 +15,8 @@ jobs:
           PUBLIC_URL: /resume
         run: |
           npm install
-          npm run render-to-file
-          npm run build
+          npm run build:web
+          npm run build:pdf
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@4.0.0
         with:
@@ -27,4 +27,4 @@ jobs:
         with:
           name: resume-en
           path: |
-            resume.pdf
+            build/alfredo-salzillo-resume.pdf
