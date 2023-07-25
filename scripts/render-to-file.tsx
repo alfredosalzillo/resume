@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactPDF, { Document } from '@react-pdf/renderer';
-import Resume, { registerFonts } from '@/Resume';
+import Resume from '@/Resume';
+import { registerFonts } from '@/fonts/lato';
 
 registerFonts('./public');
 

@@ -1,1 +1,1 @@
-export { default, registerFonts } from './Resume'
+export { default } from './Resume'
