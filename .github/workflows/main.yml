@@ -14,7 +14,7 @@ jobs:
         env: 
           PUBLIC_URL: /resume
         run: |
-          npm install
+          npm ci --force
           npm run build:web
           npm run build:pdf
       - name: Deploy 🚀
