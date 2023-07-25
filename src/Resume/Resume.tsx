@@ -17,6 +17,7 @@ export const registerFonts = (baseUrl: string = '.') => {
     url: 'https://twemoji.maxcdn.com/2/72x72/',
   });
   Font
+    // @ts-ignore
     .register({
       family: 'Lato',
       fonts: [
