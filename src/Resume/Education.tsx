@@ -5,7 +5,7 @@ import Typography from './Typography';
 type EducationProps = {
   school: string,
   degree: string,
-  date: string,
+  date?: string,
 }
 const Education: React.FC<EducationProps> = ({
   school,
@@ -15,7 +15,7 @@ const Education: React.FC<EducationProps> = ({
   <View>
     <Typography variant="h3">{school}</Typography>
     <Typography variant="body">{degree}</Typography>
-    <Typography variant="emphasis">{date}</Typography>
+    {date && <Typography variant="emphasis">{date}</Typography>}
   </View>
 )
 

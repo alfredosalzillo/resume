@@ -52,7 +52,7 @@ const experiences = [
       ' optimized for client side processing, using Angular 5 and Devextreme UI library.',
       'Developed a web application for a survey platform using React.',
     ],
-    position: 'Full stack and DWH developer',
+    position: 'Developer',
   },
 ];
 
@@ -117,7 +117,6 @@ const Resume: React.FC<ReactPDF.PageProps> = (props) => {
             <Education
               school="Federico II, University of Naples"
               degree="Degree course in computer science"
-              date="2012 - In progress"
             />
           </Section>
           <Section title="PROGRAMMING SKILLS">
