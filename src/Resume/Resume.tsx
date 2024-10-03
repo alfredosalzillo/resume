@@ -14,7 +14,7 @@ import { makeStyles } from './styles';
 const experiences = [
   {
     company: 'Treedom',
-    date: 'November 2021 - Today',
+    date: 'November 2021 - March 2024',
     details: [
       'Progressibely migrated the angularjs/vue app to React SSR using Next.',
       'Improved i18n management using lokalize.',
