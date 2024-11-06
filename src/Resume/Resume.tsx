@@ -22,7 +22,7 @@ const experiences = [
       'Decreased the main website co2 consumption from an average of 2g for page to 0.50g for page.',
       'Decreased the main website loading time from an average of 10seconds to less than 3seconds.',
     ],
-    position: 'Senior front-end developer',
+    position: 'Lead front-end developer',
   },
   {
     company: 'Together Price',
