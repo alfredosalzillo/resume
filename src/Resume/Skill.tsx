@@ -4,11 +4,9 @@ import { View, StyleSheet } from '@react-pdf/renderer';
 import Typography from './Typography';
 
 const styles = StyleSheet.create({
-  root: {
-    marginBottom: 15
-  },
+  root: {},
   container: {
-    paddingTop: 5,
+    paddingTop: 4,
   },
 });
 

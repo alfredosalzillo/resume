@@ -1,0 +1,107 @@
+{
+  "project": {
+    "link": "https://github.com/alfredosalzillo/resume"
+  },
+  "author": {
+    "name": "Alfredo Salzillo",
+    "jobTitle": "Senior Front-End Developer",
+    "link": "https://github.com/alfredosalzillo"
+  },
+  "experiences": [
+    {
+      "company": "Zakeke",
+      "date": "April 2024 - Present",
+      "position": "Senior Front-End Developer",
+      "details": [
+        "Contributed to the migration of the in-house product customizer from jQuery to React.",
+        "Improved the render performance of the canvas-based in-house product customizer by 90%."
+      ]
+    },
+    {
+      "company": "Treedom",
+      "date": "November 2021 - March 2024",
+      "position": "Lead Front-End Developer",
+      "details": [
+        "Led a team of 4 front-end developers, providing mentorship and technical guidance.",
+        "Collaborated with product stakeholders to define product roadmaps, prioritize tasks, plan releases, and manage the product backlog.",
+        "Led the progressive migration of the application from AngularJS/Vue to a React SSR architecture using Next.js.",
+        "Implemented improved internationalization (i18n) management using Lokalize.",
+        "Improved website performance from a Lighthouse score of 'F' to 'A'.",
+        "Reduced website carbon footprint by 75%, from 2g CO2/page to 0.5g CO2/page.",
+        "Decreased website load time by over 70%, from 10 seconds to under 3 seconds."
+      ]
+    },
+    {
+      "company": "Together Price",
+      "date": "September 2019 - October 2021",
+      "position": "Lead Front-End Developer",
+      "details": [
+        "Led a team of 3 front-end developers, providing mentorship and technical guidance.",
+        "Led the migration of the React Progressive Web App (PWA) to TypeScript, improving code quality and maintainability through the implementation of CI/CD pipelines.",
+        "Developed a custom solution for implementing a micro-frontend architecture."
+      ]
+    },
+    {
+      "company": "ProgettoPA",
+      "date": "October 2018 - September 2019",
+      "position": "Full Stack Developer",
+      "details": [
+        "Developed a custom solution for a multi-technology micro-frontends architecture using React and Angular."
+      ]
+    },
+    {
+      "company": "Lutech SPA",
+      "date": "October 2015 - October 2018",
+      "position": "Junior Developer",
+      "details": [
+        "Collaborated into the development and bug fixing of banking and public administration applications."
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "title": "rollup-plugin-multi-input",
+      "link": "https://github.com/alfredosalzillo/rollup-plugin-multi-input",
+      "description": "A plugin for the rollup bundler useful to build modular libraries."
+    },
+    {
+      "title": "blobs-dead-or-alive",
+      "link": "https://github.com/alfredosalzillo/blobs-dead-or-alive",
+      "description": "A game of blobs... dead or alive?"
+    }
+  ],
+  "education": {
+    "school": "Federico II, University of Naples",
+    "degree": "Degree course in computer science"
+  },
+  "skills": [
+    { "name": "Javascript", "weight": 10 },
+    { "name": "Typescript", "weight": 10 },
+    { "name": "Bash", "weight": 8 },
+    { "name": "CSS", "weight": 8 },
+    { "name": "HTML5", "weight": 9 },
+    { "name": "React", "weight": 10 },
+    { "name": "Node", "weight": 8 },
+    { "name": "SQL", "weight": 8 },
+    { "name": "Angular", "weight": 7 },
+    { "name": "Vue", "weight": 7 },
+    { "name": "GRAPHQL", "weight": 9 },
+    { "name": "RESTFul", "weight": 8 },
+    { "name": "Webpack", "weight": 7 },
+    { "name": "Rollup", "weight": 8 }
+  ],
+  "contacts": [
+    {
+      "value": "alfredosalzillo93@gmail.com",
+      "link": "mailto:alfredosalzillo93@gmail.com"
+    },
+    {
+      "value": "+39 3450774012",
+      "link": "+393450774012"
+    },
+    {
+      "value": "www.linkedin.com/in/alfredosalzillo/",
+      "link": "https://www.linkedin.com/in/alfredosalzillo/"
+    }
+  ]
+}

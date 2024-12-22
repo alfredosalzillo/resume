@@ -4,14 +4,14 @@ import { makeStyles } from './styles';
 
 const useStyles = makeStyles((theme) => ({
   h1: {
-    fontSize: 24,
+    fontSize: 20,
     fontFamily: 'Lato',
     fontWeight: 'bold',
   },
   h2: {
     fontFamily: 'Lato',
     fontWeight: 'bold',
-    fontSize: 14,
+    fontSize: 12,
   },
   h3: {
     fontFamily: 'Lato',

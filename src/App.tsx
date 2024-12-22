@@ -5,6 +5,7 @@ import { registerFonts } from './fonts/lato';
 
 import './App.css';
 import Resume from './Resume';
+import data from './data.json';
 
 registerFonts(process.env.PUBLIC_URL)
 
@@ -12,12 +13,14 @@ const App = ()  => (
   <div className="App">
     <PDFViewer className="App-resume-container">
       <Document
-        author="Alfredo Salzillo"
-        keywords="awesome, resume, developer, react"
-        subject="The resume of Alfredo Salzillo"
-        title="@alfredosalzillo/resume"
+        author={data.author.name}
+        subject={`The resume of ${data.author.name}`}
+        title={`${data.author.name} resume`}
       >
-        <Resume size="A4"/>
+        <Resume
+          size="A4"
+          data={data}
+        />
       </Document>
     </PDFViewer>
   </div>

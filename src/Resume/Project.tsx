@@ -5,7 +5,7 @@ import { makeStyles } from './styles';
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    marginBottom: 10,
+    marginBottom: 4,
   },
   title: {
     color: theme.palette.text,

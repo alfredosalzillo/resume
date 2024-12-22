@@ -5,7 +5,7 @@ import { makeStyles } from './styles';
 
 const useStyles = makeStyles((theme) => ({
   container: {
-    marginBottom: 5,
+    marginBottom: 4,
   },
   type: {
     fontFamily: 'Lato',
@@ -20,7 +20,7 @@ const useStyles = makeStyles((theme) => ({
 }))
 
 type ContactProps = {
-  label: string,
+  label?: string,
   value: string,
   link?: string,
 }
@@ -28,7 +28,7 @@ const Contact: React.FC<ContactProps> = ({ label, value, link }) => {
   const styles = useStyles();
   return (
     <View style={styles.container}>
-      <Text style={styles.type}>{label}</Text>
+      {label && <Text style={styles.type}>{label}</Text>}
       <Link src={link!} style={styles.contact}><Text>{value}</Text></Link>
     </View>
   );

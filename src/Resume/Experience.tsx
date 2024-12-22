@@ -5,19 +5,19 @@ import Typography from './Typography';
 
 const styles = StyleSheet.create({
   container: {
-    paddingTop: 30,
-    paddingLeft: 15,
+    paddingTop: 24,
+    paddingLeft: 12,
   },
   entryContainer: {
-    marginBottom: 10,
+    marginBottom: 8,
   },
   detailContainer: {
     flexDirection: 'row',
   },
   detailLeftColumn: {
     flexDirection: 'column',
-    marginLeft: 10,
-    marginRight: 10,
+    marginLeft: 8,
+    marginRight: 8,
   },
   detailRightColumn: {
     flexDirection: 'column',

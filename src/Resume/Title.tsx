@@ -4,7 +4,7 @@ import Typography from './Typography';
 
 const styles = StyleSheet.create({
   title: {
-    marginBottom: 10,
+    marginBottom: 8,
     textTransform: 'uppercase',
   },
 });
