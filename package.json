@@ -1,6 +1,6 @@
 {
   "name": "@alfredosalizzlo/resume",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "private": true,
   "dependencies": {
     "@react-pdf/renderer": "3.1.12",
