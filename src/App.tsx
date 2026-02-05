@@ -7,7 +7,7 @@ import './App.css';
 import Resume from './Resume';
 import data from './data.json';
 
-registerFonts(process.env.PUBLIC_URL)
+registerFonts(new URL(import.meta.env.BASE_URL, import.meta.url).toString())
 
 const App = ()  => (
   <div className="App">
