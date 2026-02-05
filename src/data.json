@@ -9,8 +9,16 @@
   },
   "experiences": [
     {
+      "company": "F11 (Factor Eleven)",
+      "date": "April 2025 - Present",
+      "position": "Senior Front-End Developer",
+      "details": [
+        "Optimized the Mapbox-based ad geo-targeting system by implementing custom pbf tiles, adding new filtering features, and leading the migration from country-generated to dynamic styling."
+      ]
+    },
+    {
       "company": "Zakeke",
-      "date": "April 2024 - Present",
+      "date": "April 2024 - March 2025",
       "position": "Senior Front-End Developer",
       "details": [
         "Contributed to the migration of the in-house product customizer from jQuery to React.",
@@ -22,13 +30,10 @@
       "date": "November 2021 - March 2024",
       "position": "Lead Front-End Developer",
       "details": [
-        "Led a team of 4 front-end developers, providing mentorship and technical guidance.",
-        "Collaborated with product stakeholders to define product roadmaps, prioritize tasks, plan releases, and manage the product backlog.",
+        "Led a team of 4 front-end developers, providing mentorship and technical guidance, while collaborating with product stakeholders to define roadmaps, prioritize tasks, and manage the product backlog.",
         "Led the progressive migration of the application from AngularJS/Vue to a React SSR architecture using Next.js.",
         "Implemented improved internationalization (i18n) management using Lokalize.",
-        "Improved website performance from a Lighthouse score of 'F' to 'A'.",
-        "Reduced website carbon footprint by 75%, from 2g CO2/page to 0.5g CO2/page.",
-        "Decreased website load time by over 70%, from 10 seconds to under 3 seconds."
+        "Improved website performance (Lighthouse 'F' to 'A'), reduced carbon footprint by 75% (2g to 0.5g CO2/page), and decreased load time by 70% (10s to <3s)."
       ]
     },
     {
@@ -53,9 +58,7 @@
       "company": "Lutech SPA",
       "date": "October 2015 - October 2018",
       "position": "Junior Developer",
-      "details": [
-        "Collaborated into the development and bug fixing of banking and public administration applications."
-      ]
+      "details": []
     }
   ],
   "projects": [
